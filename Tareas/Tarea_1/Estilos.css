@@ -1,0 +1,12 @@
+body{
+    background-color: gray;
+}
+
+#contenidoTotal{
+    background-color: white;
+}
+
+#aside{
+    float: left;
+    margin-left: 20px;
+}

@@ -1,0 +1,46 @@
+body{
+    background-color: gray;
+}
+
+#contenidoTotal{
+    background-color: white;
+}
+
+p{
+    color: #000;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+}
+
+#aside{
+    float: right;
+    margin-left: 20px;
+}
+
+img {
+    /* Estilos para todas las imágenes en la página */
+    border: 5px solid #000;
+    width:"250";
+    height:"250";
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  .contenedor {
+    /* Centra el contenido horizontal y verticalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+    /* Opcional: Agrega un borde al contenedor */
+    border: 5px solid black;
+  }
+
+
+div {
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 0 auto;
+  }
