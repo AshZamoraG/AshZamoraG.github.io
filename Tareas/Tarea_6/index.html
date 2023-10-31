@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript y DOM</title>
+    <script src="script.js"></script>
+</head>
+
+<body style="background-image: url(img/js.png); background-size: auto;">
+    <h1>Control de flujo y manejo de errores</h1>
+
+    <p id="control_flujo_errores"><strong>Ejemplo del if...else, se mostrara un mensaje segun su respuesta</strong></p>
+    <p>Ingrese su edad:</p>
+    <input type="text" id="numeroInput"><br><br>
+    <img src="img/if...else.png" alt="if..else"><br><br>
+    <button onclick="Control_flujo_Errores_if()">Ejecutar if</button>
+
+    <br><br>
+
+    <p id="control_flujo_errores"><strong>Ejemplo de switch, se mostrara un mensaje segun su respuesta</strong> </p>
+    <p>Ingrese un dia de la semana:</p>
+    <input type="text" id="diaInput"><br><br>
+    <img src="img/switch.png" alt="switch"><br><br>
+    <button onclick="Control_flujo_Errores_switch()">Ejecutar switch</button>
+
+
+    <p id="control_flujo_errores"><strong>Ejemplo de try/catch/throw</strong></p>
+    <img src="img/try-catch-throw.png" alt="try/catch/throw"><br><br>
+    <button onclick="Control_flujo_Errores_try_catch_throw()"> Ejecutar try/catch/throw</button>
+
+
+    <h1>Bucles e iteración</h1>
+
+    <p id="Bucles_iteración_1"><strong>Ejemplo de for</strong></p>
+    <img src="img/For.png" alt="for"><br><br>
+    <button onclick="Bucles_iteración_for()"> Ejecutar for</button>
+
+    <p id="Bucles_iteración_2"><strong>Ejemplo de while</strong></p>
+    <img src="img/While.png" alt="while"><br><br>
+    <button onclick="Bucles_iteración_while()"> Ejecutar while</button>
+
+    <p id="Bucles_iteración_3"><strong>Ejemplo de do...while</strong></p>
+    <img src="img/Do....while.png" alt="do...while"><br><br>
+    <button onclick="Bucles_iteración_do_while()"> Ejecutar do...while</button>
+
+    <h1>Funciones</h1>
+
+    <p id="Funciones"><strong>Ejemplo de Funciones, se mostrara un mensaje segun su respuesta</strong> </p>
+    <p>Ingrese su nombre:</p>
+    <input type="text" id="nombreInput"><br><br>
+    <img src="img/function.png" alt="Funciones"><br><br>
+    <button onclick="Funciones()">Ejecutar Funciones</button>
+
+    <h1>Expresiones y operadores</h1>
+
+
+    <p id="Expresiones_operadores"><strong>Ejemplo del Asignacion y Comparacion, se mostrara un mensaje segun su
+            respuesta</strong></p>
+    <p>Ingrese los números:</p>
+    <input type="text" id="numero1Input"> <a>x</a><br><br>
+    <input type="text" id="numero2Input"> <a>y</a><br><br>
+    <img src="img/Asignacion y Comparacion.png" alt="Expresiones_operadores"><br><br>
+    <button onclick="Expresiones_operadores_Asignacion_Comparacion()">Ejecutar Asignacion y Comparacion</button>
+
+    <p id="Expresiones_operadores_2"><strong>Ejemplo del Operadores aritméticos, se mostrara un mensaje segun su
+            respuesta</strong></p>
+    <p>Ingrese los números:</p>
+    <input type="text" id="num1Input"> <a>a</a><br><br>
+    <input type="text" id="num2Input"> <a>b</a><br><br>
+    <img src="img/Operadores aritmeticos.png" alt="Operadores_aritmeticos"><br><br>
+    <button onclick="Expresiones_operadores_Operadores_aritmeticos()">Ejecutar Operadores aritméticos</button>
+
+
+
+    <p id="Expresiones_operadores_3"><strong>Ejemplo del Operadores lógicos, se mostrara un mensaje segun su
+            respuesta</strong></p>
+    <label for="miRadioButt">Seleccione alguna de las opciones:</label> <br>
+    <input type="radio" name="edad" id="miRadioButt" value="mayor" required>Es mayor de edad<br><br>
+    <input type="radio" name="edad" id="miRadioButt" value="menor" required>Es menor de edad</a><br><br>
+    <img src="img/Operadores logicos.png" alt="Operadores_lógicos"><br><br>
+    <button onclick="Expresiones_operadores_Operadores_logicos()">Ejecutar Operadores lógicos</button>
+
+    <h1>Números y fechas</h1>
+
+    <p id="Numero_Fechas"><strong>Ejemplo del Objeto Numbers, se mostrara un mensaje segun su respuesta</strong></p>
+    <a>Comprueba si es un número entero</a><br><br>
+    <img src="img/Objeto number.png" alt="Operadores_lógicos"><br><br>
+    <button onclick="Numero_Fechass_Objeto_Number()">Ejecutar Objeto Number</button>
+
+    <p id="Numero_Fechas_2"><strong>Ejemplo del Objeto Math</strong></p>
+    <img src="img/Objeto Math.png" alt="Objeto_Math"><br><br>
+    <button onclick="Numero_Fechass_Objeto_Math()">Ejecutar Objeto Math</button>
+
+
+    <p id="Numero_Fechas_3"><strong>Ejemplo del Objeto Date</strong></p>
+    <img src="img/Objeto Date.png" alt="Objeto_Date"><br><br>
+    <button onclick="Numero_Fechass_Objeto_Date()">Ejecutar Objeto Date</button>
+
+    <h1>Formateo de texto</h1>
+    
+    <p id="Formateo_texto"><strong>Ejemplo del Cadenas literales</strong></p>
+    <img src="img/Cadenas literales.png" alt="Cadenas_literales"><br><br>
+    <button onclick="Numero_Fechass_Cadenas_literales()">Ejecutar Cadenas literales</button>
+
+
+    <p id="Formateo_texto_2"><strong>Ejemplo del Objeto String</strong></p>
+    <img src="img/Objeto String.png" alt="Objeto_String"><br><br>
+    <button onclick="Numero_Fechass_Objeto_String()">Ejecutar Objeto String</button>
+
+    <h1>Colecciones indexadas</h1>
+
+    <p id="Colecciones_indexadas"><strong>Ejemplo de Arreglos</strong></p>
+    <img src="img/Arreglo.png" alt="Arreglos"><br><br>
+    <button onclick="Colecciones_indexadas_Arreglos()">Ejecutar Arreglos</button>
+
+
+    <p id="Colecciones_indexadas_2"><strong>Ejemplo de Arreglos tipados</strong></p>
+    <img src="img/Arreglos Tipados.png" alt="Arreglos_ipados"><br><br>
+    <button onclick="Colecciones_indexadas_Arreglos_ipados()">Ejecutar Arreglos tipados</button>
+
+    <h1>DOM</h1>
+    
+    <p id="dom"><strong>Ejemplo de  elementos HTML por ID</strong></p>
+    <img src="img/Encontrar elmentos HTML por ID.png" alt="HTML_Por_ID"><br><br>
+    <button onclick="DOM_HTML_Por_ID()">Ejecutar Elementos HTML por ID</button>
+
+
+    <p id="dom_2"><strong>Ejemplo de  elementos HTML por nombre de etiqueta</strong></p>
+    <img src="img/Encontrar elmentos HTML por nombre de etiqueta.png" alt="HTML_Nombre_Etiqueta"><br><br>
+    <button onclick="DOM_HTML_Nombre_Etiquetas()">Ejecutar Elementos HTML por nombre de etiqueta</button>
+
+    <p id="dom_3"><strong>Ejemplo de elementos HTML por nombre de clase</strong></p>
+    <img src="img/Encontrar elmentos HTML por nombre de la clase.png" alt="HTML_Nombre_Clase"><br><br>
+    <button onclick="DOM_HTML_Nombre_Clase()">Ejecutar Elementos HTML por nombre de clase</button>
+
+
+    <p id="dom_4"><strong>Ejemplo de elementos HTML mediante selectores CSS</strong></p>
+    <img src="img/Encontrar elmentos HTML mediante selectores CSS.png" alt="HTML_Selecctores_CSS"><br><br>
+    <button onclick="DOM_HTML_Selecctores_CSS()">Ejecutar Elementos HTML mediante selectores CSS</button>
+
+    <p id="dom_5"><strong>Ejemplo de elementos HTML por colecciones de objetos HTML</strong></p>
+    <img src="img/Encontrar elmentos HTML por colectores de objetos HTML.png" alt="HTML_Objetos_HTML"><br><br>
+    <button onclick="DOM_HTML_Objetos_HTML()">Ejecutar Elementos HTML por colecciones de objetos HTML</button>
+
+
+</body>
+
+</html>
