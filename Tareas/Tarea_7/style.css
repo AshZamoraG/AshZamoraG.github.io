@@ -1,0 +1,59 @@
+
+body{
+    background: url(img/img-body.png) fixed;
+    align-items: center;
+    color:aliceblue;
+}
+
+.box1{
+    text-align: justify;
+    color: aliceblue;
+    width: 600px;
+    margin: 50px;
+    border:orange 3px solid;
+
+}
+
+.box1 h1{
+    color:red;
+}
+
+.box2{
+    text-align: justify;
+    color: aliceblue;
+    width: 600px;
+    margin-left: 700px;
+    border: orange 3px solid;
+
+}
+
+.box2 h1{
+    color:yellow;
+}
+
+.box3{
+    text-align: justify;
+    color: aliceblue;
+    width: 600px;
+    margin-left: 1250px;
+    border:  orange 3px solid;
+
+}
+
+.box3 h1{
+    color:rgb(28, 182, 230);
+}
+
+
+
+h1{
+    color: #fff;
+}
+
+.Pie{
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto; 
+}
