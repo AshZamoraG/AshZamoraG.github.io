@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ashly Zamora Gamboa" />
+    <link rel="shortcut icon" href="../../img/LogoProyecto.png">
+    <title> Gatos</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+    <!--complemento para los iconos-->
+    <script src="https://kit.fontawesome.com/7e471d6c7e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="completeBody">
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="navbar-icon">
+                    <img src="../../img/LogoProyecto.png" alt="Logo" style="width: 100px;">
+                    Pet Guardian
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="navbar">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../Proyecto/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../Proyecto/Formulario.html">Formulario de
+                                    Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../Proyecto/Contacto.html">Contactenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../Proyecto/Acercade.html">Acerda de Sitio</a>
+                            </li>
+                        </ul>
+                        <!--
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <!--Mini galeria de Imagenes-->
+        <div class="container-Minigaleria">
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/cat-breeds/siamese">
+                        <img src="../../Animales/Gatos/Siamese.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Siamese.2.jpg?h=25a8a222&itok=8V-Sys6f-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/siamese-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Gatos/Siamese.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Siamese.2.jpg?h=25a8a222&itok=8V-Sys6f-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/siamese-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Gato</div>
+                            <div class="raza">Siamese</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/cat-breeds/british-shorthair">
+                        <img src="../../Animales/Gatos/British Shorthair.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/British%20Shorthair.2.jpg?h=59e70545&itok=riJJtjDf-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/british-shorthair-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Gatos/British Shorthair.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/British%20Shorthair.2.jpg?h=59e70545&itok=riJJtjDf-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/british-shorthair-->
+
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Gato</div>
+                            <div class="raza">British Shorthair</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/cat-breeds/maine-coon">
+                        <img src="../../Animales/Gatos/Maine Coon.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Maine%20Coon.1.jpg?h=22199d45&itok=TzJP6L8f-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/maine-coon-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Gatos/Maine Coon.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Maine%20Coon.1.jpg?h=22199d45&itok=TzJP6L8f-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/maine-coon-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Gato</div>
+                            <div class="raza">Maine Coon</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/cat-breeds/ragdoll">
+                        <img src="../../Animales/Gatos/Ragdoll.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Ragdoll.1.jpg?h=c8f08124&itok=p-StLu0w-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/ragdoll-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Gatos/Ragdoll.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Ragdoll.1.jpg?h=c8f08124&itok=p-StLu0w-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/ragdoll-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Gato</div>
+                            <div class="raza">Ragdoll</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image last">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/cat-breeds/sphynx">
+                        <img src="../../Animales/Gatos/Sphynx.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Sphynx.1.jpg?h=ee36b89e&itok=2fNViXNl-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/sphynx-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Gatos/Sphynx.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-06/Sphynx.1.jpg?h=ee36b89e&itok=2fNViXNl-->
+                        <!--https://www.purina.co.uk/find-a-pet/cat-breeds/sphynx-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Gato</div>
+                            <div class="raza">Sphynx</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Cuadros Centrales-->
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <!--Cuadro Info Central -->
+                    <div class="card" style="width: 18rem" id="card1">
+                        <div class="card-body; ">
+                            <img src="../../img/icon/calendario-patita.png" alt="" />
+                            <h5 class="card-title">Promedio de Vida en años</h5>
+                            <p class="card-text">12 – 18 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;" id="card1">
+                        <div class="card-body; ">
+                            <i class="fa-solid fa-cat fa-bounce"></i>
+                            <h5 class="card-title">Cuida del dormilon de la casa</h5>
+                            <p class="card-text">Con su mirada cautivadora y su independencia singular,
+                                nos enseñan la magia de la serenidad y la conexión con lo instintivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem" id="card1">
+                        <div class="card-body; ">
+                            <i class="fa-solid fa-weight-scale"></i>
+                            <h5 class="card-title">Peso Promedio</h5>
+                            <p class="card-text">2.5 - 5,5 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+
+        <div class="container-Enfermedades">
+            <div id="catalogo">
+                <div class="enfermedad">
+                    <h1>"Infección por retrovirus"</h1>
+                    <p>"Virus de la leucemia felina y Virus de la inmunodeficiencia felina.
+                        La inmunodeficiencia felina (FIV) es una infección equivalente al VIH en humanos y se suele
+                        trasmitir a través de arañazos o mordeduras."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Infección por retrovirus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>El virus de la leucemia felina (FeLV) es un
+                                        “retrovirus”. Se trata de un agente infeccioso que
+                                        puede infectar a los gatos e introducirse en sus células, produciendo
+                                        alteraciones en su
+                                        sistema inmune, anemias, leucemias y linfomas.
+                                        Afecta a gatos por todo el mundo. La prevalencia puede ser mayor en animales de
+                                        vida salvaje,
+                                        pero también puede afectar a gatos sin acceso al exterior.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"></i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Fiebre</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Falta de apetito</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Letargia</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Infecciones</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Anemias</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Neoplasias</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Dificultad respiratoria</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Palidez de mucosas</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Debilidad</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i> </i>Tratamiento</h5>
+                                    <p>No existe una cura para la leucemia felina, las terapias están enfocadas al
+                                        tratamiento de sus
+                                        enfermedades asociadas, a la mejora de los síntomas y a tratar de mantener una
+                                        buena calidad
+                                        de vida del paciente</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enfermedad">
+                    <h1>"La insuficiencia renal crónica"</h1>
+                    <p>"Consiste en una alteración en la función del riñón. Se trata de la enfermedad más común entre
+                        los felinos"<br>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop2Label">Insuficiencia renal crónica
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>Es una enfermedad muy común en los gatos
+                                        ancianos. Con el paso del tiempo,
+                                        los riñones se van deteriorando y pierden la capacidad de filtrar la sangre para
+                                        convertirla en orina.
+                                        Es una enfermedad mortal, pero existe un tratamiento para mejorar su calidad de
+                                        vida.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"></i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Pérdida de peso y masa muscular</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Pelo seco y sin brillo</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Micciones frecuentes y abundantes</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Sed apremiante</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Anorexia o hiporexia</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Vómitos</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Estreñimiento</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Halitosis</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Apatía y cansancio</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Hipertensión arterial</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i> </i>Tratamiento</h5>
+                                    <p>El tratamiento para la insuficiencia renal crónica felina es para toda la vida.
+                                        Se basa en un cambio en su dieta y la administración de fármacos que le ayuden a
+                                        minimizar los desequilibrios de electrolitos y nutrientes, así como recuperar la
+                                        presión sanguínea normal.
+
+                                        <br>
+
+                                        La alimentación de un gato con insuficiencia renal crónica debe ser muy
+                                        apetitosa para luchar
+                                        contra la anorexia. Además, suele ser baja en proteínas, fósforo y sodio, pero
+                                        también alta en fibra,
+                                        potasio, vitaminas B y C, calorías, agentes alcalinizantes y ácidos omega 3.
+
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Diabetes Mellitus"</h1>
+                    <p>"Al igual que en humanos, los gatos también pueden sufrir diabetes.
+                        De hecho, es una afección habitual entre los felinos con sobrepeso de más de siete años y que
+                        llevan una
+                        vida sedentaria."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop3Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop3Label">Diabetes Mellitus</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>La diabetes mellitus es una de las
+                                        enfermedades endocrinas más
+                                        comunes en los gatos. La diabetes en gatos es muy similar a la diabetes tipo 2
+                                        en humanos.
+                                        Esta enfermedad ocurre cuando existe una falta de insulina o el cuerpo no
+                                        responde a ella,
+                                        lo que provoca que aumente el azúcar en sangre. En consecuencia, la glucosa se
+                                        filtra a la orina a
+                                        través de los riñones. El azúcar transporta líquido, por lo que el gato orina y
+                                        bebe más</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"><a></a> </i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Suelen perder peso a pesar de tener más
+                                                hambre</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Aumento de la sed</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Frecuencia al orinar</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Perezosos </a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Aletargados</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i><a></a> </i>Tratamiento</h5>
+                                    <p>El tratamiento consiste en inyecciones de insulina, que deben administrarse dos
+                                        veces al día.
+                                        Aunque suele ser de por vida, en algunos gatos la enfermedad remite y no hace
+                                        falta seguir administrando
+                                        insulina.
+                                        <br>
+                                        Los alimentos, que a menudo se basarán en dietas especiales bajas en
+                                        carbohidratos,
+                                        deben servirse regularmente. El gato debe poder beber agua siempre que quiera.
+                                        Además,
+                                        no debe dejarlo desatendido durante mucho tiempo, ya que la glucosa en sangre
+                                        puede fluctuar y
+                                        tanto los niveles altos como los bajos pueden poner en peligro su vida.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Cáncer en felinos"</h1>
+                    <p>" Afecta en especial a los pacientes de mayor edad y, debido a que la medicina ha conseguido
+                        alargar la vida de las mascotas, cada vez se dan más casos de cáncer en felinos."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop4Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop4Label">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>El cáncer en los gatos puede presentarse de 2
+                                        maneras: benigno y maligno,
+                                        la diferencia entre ambos radica en que el primero es es un crecimiento de
+                                        células atípicas que no se disemina,
+                                        es decir, no afectará otros órganos o sistemas del cuerpo; y la segunda forma
+                                        (maligna), causa metástasis,
+                                        lo que quiere decir que puede afectar sistemas importantes del gato enfermando
+                                        gravemente.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"><a></a> </i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Aparición de bultos, principalmente en el
+                                                estómago.</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Sangrado inusual, en su cara.</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Heridas que no cicatrizan, por su parte
+                                                dorsal.</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Úlceras, en sus patitas.</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Halitosis, permanente o fuerte.</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Dificultad para comer.</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Salivación intermitente o continua.</a>
+                                        </li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Ictericia</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Pérdida inexplicable de peso.</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i><a></a> </i>Tratamiento</h5>
+                                    <p>Similar a las personas existen algunas formas de cáncer que se pueden tratar
+                                        asegurando
+                                        al gato una buena calidad de vida, mientras que en otros casos, lo único que se
+                                        puede hacer
+                                        es ir tratando los síntomas a medida que aparecen sin una mejoría clara</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        //Funcion ara darle color a la cajas
+        $('.enfermedad').mouseenter(function () {
+            $(this).css('background-color', ' aquamarine');
+        });
+
+        $('.enfermedad').mouseleave(function () {
+            $(this).css('background-color', '');
+        });
+
+        //Funcion para hacer el efecto de sombras
+
+
+        $('.enfermedad').mouseenter(function () {
+            $(this).css('box-shadow', '0 0.6rem 0.9rem black');
+        });
+
+        $('.enfermedad').mouseleave(function () {
+            $(this).css('box-shadow', '');
+        });
+
+    </script>
+
+
+    <br><br>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer font-small  pt-4" id="footer">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3" id="contenido">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Pet Guardian </h6>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#">Formulario de Citas</a></p>
+                    <p><a href="Galeria.html">Galeria</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociales:</h6>
+
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/ashlydaniela.zamoragamboa" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/ash_zamora99/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="mailto:ashlyd22zamora@gamil.com" target="_blank"><i class="fa fa-google"></i></a>
+                        </li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://web.telegram.org/a/#777000" target="_blank"><i
+                                    class="fa fa-telegram"></i></a></li>
+                        <li><a href="https://github.com/ashzamorag.github.io/" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ubicación</h6>
+                    <a> Costa Rica, Alajuela | Sarchí, San Jóse de Trojas </a>
+
+                </div>
+
+            </div>
+            <div>
+                <center style="text-align: center;">Copyright &copy; Derechos Reservados | Ashly Daneniela Zamora Gamboa
+                    | Pet Guardian | UTN III-2023</center>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

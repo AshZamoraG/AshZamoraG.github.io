@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ashly Zamora Gamboa" />
+    <link rel="shortcut icon" href="img/LogoProyecto.png">
+    <title>Pet Guardian</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/Contacto.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <!--API de Google-->
+    <script src="js/googleApi.js"></script>
+
+    <!--Calculo Formulario-->
+    <script src="js/calculoFormulario.js"></script>
+
+    <!--Scripts externos-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body class="completeBody">
+
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="navbar-icon">
+                    <img src="img/LogoProyecto.png" alt="Logo" style="width: 100px;">
+                    Pet Guardian
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="navbar">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Formulario.html">Formulario de
+                                    Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Galeria.html">Galeria
+                                    Imagenes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="EsquemaVacunas.html">Esquema de
+                                    Vacunas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Contacto.html">Contactenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Acercade.html">Acerda de
+                                    Sitio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-main">
+            <div class="site-content">
+                <div class="site-content">
+                    <div id="info">
+                        <h2>Contacto</h2>
+                        <h4>Creadora de la empresa:</h4>
+                        <p>Ashly Daniela Zamora Gamboa</p>
+                        <h4>Email de Contacto:</h4>
+                        <p>ashlyd22zamora@gmail.com</p>
+                        <h4>Números de contacto</h4>
+                        <p>+ 506 8489 9090</p>
+                        <p>+ 506 2454 5676</p>
+                    </div>
+                    <br>
+                </div>
+
+                <form id="form" class="form-register"  action="https://formspree.io/f/xeqbbabo" method="POST">
+                    <h4>Formulario Registro</h4><br>
+                    <p>Nombre Completo</p>
+                    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                    <br>
+                    <p>Correo Electronico</p>
+                    <input class="controls" type="email" name="mail" id="mail"
+                        placeholder="Ingrese su Correo Electronico">
+                    <br>
+                    <p>Fecha de Nacimiento</p>
+                    <input class="controls" type="date" name="fecha" id="fecha"
+                        placeholder="Ingrese su Fecha de Nacimiento">
+                    <input class="controls" type="number" name="edad" id="edad"
+                        placeholder="Edad según su fecha de nacimiento" readonly="" style="visibility: hidden;">
+
+                    <p>Género</p>
+                    <input type="radio" name="genero" id="genero" value="Masculino">&nbsp;Masculino&nbsp;
+                    <input type="radio" name="genero" id="genero" value="Femenino">&nbsp;Femenino&nbsp;
+                    <input type="radio" name="genero" id="genero" value="Otro">&nbsp;Otro&nbsp;
+                    <br><br>
+                    <p>Grado Académico</p>
+                    <input type="checkbox" name="grado" id="grado" value="Noveno Colegio">&nbsp;Noveno Colegio&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Bachillerato Colegio">&nbsp;Bachillerato
+                    Colegio&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Diplomado">&nbsp;Diplomado&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Técnico">&nbsp;Técnico&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Bachillerato">&nbsp;Bachillerato&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Licenciatura">&nbsp;Licenciatura&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Maestría">&nbsp;Maestría&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Especialidad">&nbsp;Especialidad&nbsp;
+                    <br>
+                    <input type="checkbox" name="grado" id="grado" value="Doctorado">&nbsp;Doctorado&nbsp;
+                    <br><br>
+
+                    <section id="ubicacion" class="boton">
+                        <button type="button" class="btn btn-success" id="obtener">Obtener
+                            Ubicación</button>
+                    </section>
+                    <br>
+                    <div id="map" class="map" style="height: 400px;"></div>
+
+
+                    <button class="botons" type="submit"> Registrar</button>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=">
+                    </script>
+
+                </form>
+
+                <!--API Email -->
+                <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+                <!--Email Formulario-->
+                <script src="js/email.js"></script>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <br><br>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer font-small  pt-4" id="footer">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3" id="contenido">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Pet Guardian </h6>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="Formulario.html">Formulario de Citas</a></p>
+                    <p><a href="Galeria.html">Galeria</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociales:</h6>
+
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/ashlydaniela.zamoragamboa" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/ash_zamora99/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="mailto:ashlyd22zamora@gamil.com" target="_blank"><i class="fa fa-google"></i></a>
+                        </li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://web.telegram.org/a/#777000" target="_blank"><i
+                                    class="fa fa-telegram"></i></a></li>
+                        <li><a href="https://ashzamorag.github.io/" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ubicación</h6>
+                    <a> Costa Rica, Alajuela | Sarchí, San Jóse de Trojas </a>
+
+                </div>
+
+            </div>
+            <div>
+                <center style="text-align: center;">Copyright &copy; Derechos Reservados | Ashly Daneniela Zamora Gamboa
+                    | Pet Guardian | UTN III-2023</center>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ashly Zamora Gamboa" />
+    <link rel="shortcut icon" href="img/LogoProyecto.png">
+    <title>Pet Guardian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+    <script src="https://kit.fontawesome.com/7e471d6c7e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="completeBody">
+        <header>
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" id="navbar-icon">
+                        <img src="img/LogoProyecto.png" alt="Logo" style="width: 100px;">
+                        Pet Guardian
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" id="navbar">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Formulario.html">Formulario de
+                                        Citas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Galeria.html">Galeria Imagenes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="EsquemaVacunas.html">Esquema de Vacunas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Contacto.html">Contactenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Acercade.html">Acerda de
+                                        Sitio</a>
+                                </li>
+                            </ul>
+                            <!--
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Carousel -->
+            <div id="carouselCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Carrusel/Perros.jpg" id="banner" alt="Perros" height="680px" width="100%"
+                            class="img-fluid">
+                        <!--https://www.freepik.es/fotos-vectores-gratis/manada-perros-->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Perros</h3>
+                            <p>Todo para el mejor amigo del hombre</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carrusel/Gato.png" id="banner" alt="Gatos" height="680px" width="100%"
+                            class="img-fluid">
+                        <!--https://www.purina.es/encuentra-mascota/nuevo-gato-en-casa/adoptar-un-gato/beneficios-de-tener-un-gato-->
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 style="color: black;">Gatos</h3>
+                            <p style="color: black;">Todo para los más cariñosos y dormilones de la casa</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carrusel/Caballo.png" id="banner" alt="Caballos" height="680px" width="100%"
+                            class="img-fluid">
+                        <!--https://concepto.de/caballo/-->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Caballos</h3>
+                            <p>Todo para los más Elegantes y Majestuosos </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+
+        <br><br>
+        <!--Columns-->
+        <div class="container">
+            <div class="site-content">
+                <div class="col-md-12">
+                    <div class="row">
+                        <h1 class="col-sm-12 col-md-12" style="text-align: center;">Información sobre Animales</h1>
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Perro" href="Animales/Perros/Perros.html"><img
+                                    src="img/InfoAnimales/Perro_Centro.png" alt="img" /></a>
+                            <!--https://www.elconfidencial.com/alma-corazon-vida/2019-05-26/perros-sonrien-mascotas-simpaticos-chuchos_2010406/-->
+                            <p>Perros</p>
+                        </div>
+
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Gato" href="Animales/Gatos/Gatos.html"><img src="img/InfoAnimales/Gato_Centro.png"
+                                    alt="img" /></a>
+                            <!--https://www.terra.com.br/vida-e-estilo/pets/6-curiosidades-interessantes-sobre-a-visao-dos-gatos,962ab042907aa2db98ba933bacadbfd9b6nemo24.html-->
+                            <p>Gatos</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Caballo" href="Animales/Caballos/Caballos.html"><img
+                                    src="img/InfoAnimales/Caballo_Centro.png" alt="img" /></a>
+                            <!--https://www.freepik.es/fotos-premium/caballo-frison-negro-al-galope-corriendo_26276075.htm?query=caballos#from_view=detail_alsolike-->
+                            <p>Caballos</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Vaca" href="#"><img src="img/InfoAnimales/Vaca_Centro.png"
+                                    alt="img" /></a>
+                            <!--https://www.gastroactitud.com/pista/vacas-asadores/-->
+                            <p>Vacas</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Conejo" href="#"><img
+                                    src="img/InfoAnimales/Conejo_Centro.png" alt="img" /></a>
+                            <!--https://www.20minutos.es/imagenes/animaleros/otros-animales/5123706-conoce-las-adorables-razas-de-conejos-toy-mas-populares-en-espana/-->
+                            <p>Conejos</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Cerdo" href="#"><img
+                                    src="img/InfoAnimales/Cerdo_Centro.png" alt="img" /></a>
+                            <!--https://www.ngenespanol.com/animales/un-nuevo-algoritmo-traduce-con-exito-los-grunidos-de-los-cerdos/-->
+                            <p>Cerdos</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Tortuga" href="#"><img
+                                    src="img/InfoAnimales/Tortuga_Centro.png" alt="img" /></a>
+                            <!--https://www.zooplus.es/magazine/reptiles/especies-de-reptiles/las-tortugas-->
+                            <p>Tortugas</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3" id="animal-conteiner">
+                            <a title="Cabra" href="#"><img
+                                    src="img/InfoAnimales/Cabra_Centro.png" alt="img" /></a>
+                            <!--https://animals.howstuffworks.com/pets/otherpets/pygmy-goats.htm-->
+                            <p>Cabras</p>
+                        </div>
+
+                    </div>
+            
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <h1 class="col-sm-12 col-md-12" style="text-align: center;">Noticias más recientes</h1>
+            <div class="col-sm-12 col-md-6">
+                <div class="container bg-light" id="news">
+                    <img id="newsImg" alt="Cancer en Perros" class="img-fluid rounded"
+                        src="img/InfoAnimales/News_Perros.png" />
+                    <!--onmouseout="this.src='img/InfoAnimales/News_Perros.png';"-->
+                    <!--https://www.ngenespanol.com/wp-content/uploads/2023/03/perros-con-cancer-770x514.jpg-->
+                    <!--https://www.ngenespanol.com/animales/los-perros-mueren-de-cancer-con-cada-vez-mas-frecuencia/-->
+                    <h3 style="color:#000000;">El cáncer ser convierte en la primera causa de muerte de los perros
+                        domésticos
+                    </h3>
+                    <br>
+                    <p id="noticia-container">
+                        Hay 5 factores determinantes que aumentan la probabilidad de que un perro adquiera cáncer en
+                        la
+                        edad
+                        adulta. Aquí te
+                        explicamos cuáles son y cómo prevenirlos.
+                        Le pasa a la mitad de la población de perros domésticos adultos. Después de tener vidas
+                        relativamente
+                        sanas, el 50 %
+                        de los perros padecen cáncer al llegar a la madurez, y no logran superar la enfermedad.
+                        Específicamente,
+                        de acuerdo
+                        con un estudio publicado recientemente, el fenómeno está presente en razas como Rottweilers
+                        y
+                        Mastines
+                        tibetanos,
+                        que demostraron ser más susceptibles a luchar contra la enfermedad.
+
+                        Sin embargo, no todas las razas de perros son tan propensas como otras para desarrollar
+                        cáncer.
+                        Mucho
+                        tiene que ver,
+                        explican los investigadores, con el mestizaje, la edad y el ambiente en el que estos
+                        animales de
+                        compañía vivan.
+                        Esto es lo que sabemos al respecto.</b>
+                    </p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container bg-light" id="news">
+                    <h2><strong>Noticias de National Geographic</strong> </h2><br>
+                    <div id="noticias"></div>
+                    <script src="js/noticias.js"></script>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+
+        <br><br>
+        <h1 class="col-sm-12 col-md-12" style=" text-align:center">Video y Audio informativos</h1>
+        <div class="rowt">
+            <div class="container bg-ligh" id="news">
+                <div class="col-sm-12 col-md-6" id="informativos-container">
+                    <p><strong>OLA DE CALOR, consejos para que tus mascotas no sufran</strong></p>
+                </div>
+                <p id="noticia-container-video">
+        
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/abOC9LnujrY?si=EhmZY3CJI73oH33s"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+        
+                </p>
+            </div>
+
+            <div class="container bg-light" id="news" >
+                <div class="col-sm-12 col-md-6" id="proximamente-container-audio">
+                    <p><strong>Braquicefálicos - Tips.</strong></p>
+                </div>
+                <p id="noticia-container-audio">
+                    Los animales braquicéfalos son aquellos que presentan un hocico achatado y pliegues faciales muy característicos. Estos
+                    animales tienen en común un cráneo de proporciones acortadas. “Braqui” significa “acortado” y “céfalo” significa “cabeza”.
+                    <br>
+                    Al tener la cara y los huesos de la nariz más cortos que otras razas de animales, la anatomía de otros tejidos corporales
+                    se ve alterada ya que el espacio es limitado.
+                    <br>
+                    Los animales de este tipo tienen la cara chata y muchas veces el diámetro de sus orificios nasales es más pequeño de lo
+                    normal. Aunque su aspecto suele ser muy simpático, las características anatómicas de esta clase de animales les hacen
+                    estar más expuestos a los problemas respiratorios y, en verano, al temido golpe de calor.</p>
+                <audio id="audio" controls>
+                    <source src="Multimedia/Animales Braquicefálicos - Tips_mp4.mp3"
+                        type="audio/ogg">
+                </audio>
+
+            </div>
+        </div>
+
+        <br><br>
+        <!-- FOOTER -->
+
+        <footer class="page-footer font-small  pt-4" id="footer">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left mt-3 pb-3" id="contenido">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Pet Guardian </h6>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="Formulario.html">Formulario de Citas</a></p>
+                        <p><a href="Galeria.html">Galeria</a></p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociales:</h6>
+
+                        <ul class="socials">
+                            <li><a href="https://www.facebook.com/ashlydaniela.zamoragamboa" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/ash_zamora99/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li><a href="mailto:ashlyd22zamora@gamil.com" target="_blank"><i
+                                        class="fa fa-google"></i></a></li>
+                            <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            </li>
+                            <li><a href="https://web.telegram.org/a/#777000" target="_blank"><i
+                                        class="fa fa-telegram"></i></a></li>
+                            <li><a href="https://ashzamorag.github.io/" target="_blank"><i
+                                        class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Ubicación</h6>
+                        <a> Costa Rica, Alajuela | Sarchí, San Jóse de Trojas </a>
+
+                    </div>
+
+                </div>
+                <div>
+                    <center style="text-align: center;">Copyright &copy; Derechos Reservados | Ashly Daneniela Zamora
+                        Gamboa | Pet Guardian | UTN III-2023</center>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>

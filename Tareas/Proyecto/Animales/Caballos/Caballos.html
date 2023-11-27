@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ashly Zamora Gamboa" />
+    <link rel="shortcut icon" href="../../img/LogoProyecto.png">
+    <title> Caballos</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Scripts externos-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+    <!--complemento para los iconos-->
+    <script src="https://kit.fontawesome.com/7e471d6c7e.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body class="completeBody">
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html" id="navbar-icon">
+                    <img src="../../img/LogoProyecto.png" alt="Logo" style="width: 100px;">
+                    Pet Guardian
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="navbar">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../Formulario.html">Formulario
+                                    de
+                                    Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../Galeria.html">Galeria Imagenes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../EsquemaVacunas.html">Esquema
+                                    de Vacunas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../../Contacto.html">Contactenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../Acercade.html">Acerda
+                                    de Sitio</a>
+                            </li>
+                        </ul>
+                        <!--
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Mini galeria de Imagenes-->
+        <div class="container-Minigaleria">
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.a-alvarez.com/blog/hipica/caballos/tennessee-walking-horse">
+                        <img src="../../Animales/Caballos/TENNESSEE WALKING HORSE.png" alt="" />
+                        <!--https://www.curtisur.es/blog-guarnicioneria/razas-de-caballos/-->
+                        <!--https://www.curtisur.es/blog-guarnicioneria/wp-content/uploads/2016/06/razas-de-caballos-tennesse.jpg-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Caballos/TENNESSEE WALKING HORSE.png" alt="" />
+                        <!--https://www.curtisur.es/blog-guarnicioneria/razas-de-caballos/-->
+                        <!--https://www.curtisur.es/blog-guarnicioneria/wp-content/uploads/2016/06/razas-de-caballos-tennesse.jpg-->s
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Caballo</div>
+                            <div class="raza">Tennessee Walking </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="http://www.razas-caballos.com/caballos-frison">
+                        <img src="../../Animales/Caballos/Frisón.png" alt="" />
+                        <!--https://husse-eu.global.ssl.fastly.net/media/wysiwyg/3345/caballo%20frison(1).jpeg-->
+                        <!--https://www.zotal.com/tipos-y-razas-de-caballos/-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Caballos/Frisón.png" alt="" />
+                        <!--https://husse-eu.global.ssl.fastly.net/media/wysiwyg/3345/caballo%20frison(1).jpeg-->
+                        <!--https://www.zotal.com/tipos-y-razas-de-caballos/-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Caballo</div>
+                            <div class="raza">Frisón</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="http://www.razas-caballos.com/caballos-percherones">
+                        <img src="../../Animales/Caballos/Percherones.png" alt="" />
+                        <!--https://i.pinimg.com/736x/d8/28/e4/d828e413565a9b24dd99bb5029a18336.jpg-->
+                        <!--https://www.zotal.com/tipos-y-razas-de-caballos/-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Caballos/Percherones.png" alt="" />
+                        <!--https://i.pinimg.com/736x/d8/28/e4/d828e413565a9b24dd99bb5029a18336.jpg-->
+                        <!--https://www.zotal.com/tipos-y-razas-de-caballos/-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Caballo</div>
+                            <div class="raza">Percherones</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.zooplus.es/magazine/caballos/razas-de-caballos/caballo-andaluz">
+                        <img src="../../Animales/Caballos/Andaluz.png" alt="" />
+                        <!--https://www.zooplus.es/magazine/wp-content/uploads/2022/11/Caballo-andaluz-1.jpg-->
+                        <!--https://www.zooplus.es/magazine/caballos/razas-de-caballos/caballo-andaluz-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Caballos/Andaluz.png" alt="" />
+                        <!--https://www.zooplus.es/magazine/wp-content/uploads/2022/11/Caballo-andaluz-1.jpg-->
+                        <!--https://www.zooplus.es/magazine/caballos/razas-de-caballos/caballo-andaluz-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Caballo</div>
+                            <div class="raza">Andaluz</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image last">
+                <div class="icon">
+                    <a href="http://www.razas-caballos.com/caballos-mustang">
+                        <img src="../../Animales/Caballos/Mustang.png" alt="" />
+                        <!--http://www.razas-caballos.com/caballos-mustang-->
+                        <!--https://cdn.ehorses.media/image/blur/big/ari-mustang-semental-buckskin-bayo-semental-maxsain_57806fd1-110d-4f7a-b87d-e7f7fe31fd00.jpg-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Caballos/Mustang.png" alt="" />
+                        <!--http://www.razas-caballos.com/caballos-mustang-->
+                        <!--https://cdn.ehorses.media/image/blur/big/ari-mustang-semental-buckskin-bayo-semental-maxsain_57806fd1-110d-4f7a-b87d-e7f7fe31fd00.jpg-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Caballo</div>
+                            <div class="raza">Mustang</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image last">
+                <div class="icon">
+                    <a href="http://www.razas-caballos.com/caballos-pura-sangre-ingles">
+                        <img src="../../Animales/Caballos/pura sangre inglés.png" alt="" />
+                        <!--http://www.razas-caballos.com/caballos-pura-sangre-ingles-->
+                        <!--http://www.razas-caballos.com/Imagenes/caballo-pura-sangre-ingles-salvaje.jpg-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Caballos/pura sangre inglés.png" alt="" />
+                        <!--http://www.razas-caballos.com/caballos-pura-sangre-ingles-->
+                        <!--http://www.razas-caballos.com/Imagenes/caballo-pura-sangre-ingles-salvaje.jpg-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Caballo</div>
+                            <div class="raza">Pura Sangre Inglés</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Cuadros Centrales-->
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <!--Cuadro Info Central -->
+                    <div class="card" style="width: 18rem" id="card1">
+                        <div class="card-body; ">
+                            <img src="../../img/icon/calendario-patita.png" alt="" />
+                            <h5 class="card-title">Promedio de Vida en años</h5>
+                            <p class="card-text">25 – 30 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;" id="card1">
+                        <div class="card-body; ">
+                            <i class="fa-solid fa-horse fa-bounce"></i>
+                            <h5 class="card-title">Simpre elegantes e indomables</h5>
+                            <p class="card-text">Los caballos, majestuosos y nobles, son la personificación de la gracia
+                                en
+                                movimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem" id="card1">
+                        <div class="card-body; ">
+                            <i class="fa-solid fa-weight-scale"></i>
+                            <h5 class="card-title">Peso Promedio</h5>
+                            <p class="card-text">700 – 1,000 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+
+        <div class="container-Enfermedades">
+            <div id="catalogo">
+                <div class="enfermedad">
+                    <h1>"Cólico Equino"</h1>
+                    <p>"El cólico en equinos es causado por un dolor originado en estómago, intestino o el peritoneo que
+                        cubre esos órganos
+                        y la pared abdominal."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cólico Equino</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>Una de las enfermedades más comunes en
+                                        caballos es el cólico equino que es
+                                        producido por diferentes causas como el estreñimiento o cálculos. Suele producir
+                                        fuertes dolores espasmódicos en
+                                        el
+                                        abdomen.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"></i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Movimientos incontrolados</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>El caballo puede revolcarse por el
+                                                intenso dolor</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Deshidratación extrema</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Diarrea o Estreñimiento</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i> </i>Tratamiento</h5>
+                                    <p>Pese a que el animal presenta estos síntomas, lo más recomendable es realizar
+                                        exámenes médicos y con el
+                                        diagnóstico del especialista para evaluar y determinar la causa del cólico.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enfermedad">
+                    <h1>" Artritis"</h1>
+                    <p>"Consiste en una alteración en la función del riñón. Se trata de la enfermedad más común entre
+                        los felinos"<br>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop2Label">Artritis</h1>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>inflamación de las articulaciones del caballo
+                                        causada por una infección bacteriana. </p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"></i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Dolor corporal</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Hinchazón en las articulaciones</a>
+                                        </li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Fiebre</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Falta de apetito</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Rigidez (en los casos más graves)</a>
+                                        </li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Cojera temporal</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i> </i>Tratamiento</h5>
+                                    <p>Infiltraciones, inyectadas directamente en la articulación adolorida del caballo.
+                                        Pueden ser a base de ácido
+                                        hialurónico, que tendrá el efecto de aumentar la lubricación de la articulación.
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Tétanos"</h1>
+                    <p>"Esta enfermedad es producida por una bacteria (Clostridium tetani) que afecta al sistema
+                        nervioso desencadenando una
+                        parálisis espástica"<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop3Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop3Label">Tétanos</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>Esta enfermedad es muy frecuente en caballos
+                                        y es provocada por una bacteria
+                                        llamada Clostridium tetani. Se puede producir por pequeñas heridas o rozaduras,
+                                        por ejemplo, cuando el caballo pisa
+                                        un clavo y la herida está expuesta al ingreso de bacterias o gérmenes que pueden
+                                        perjudicar la salud del animal.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"><a></a> </i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Hiperextensión de músculos, que evita
+                                                la flexión y movilidad de las patas</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Mandíbulas muy apretadas</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i><a></a> </i>Tratamiento</h5>
+                                    <p>El tratamiento de un équino con tétanos incluye la administración de antibióticos
+                                        parenterales,
+                                        sedantes y relajantes musculares.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Influenza o gripe equina "</h1>
+                    <p>" La influenza equina (influenza de los caballos) afecta la nariz, la garganta y en algunos casos
+                        los pulmones."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop4Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop4Label">Influenza o gripe equina</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>La influenza o gripe equina es una enfermedad
+                                        muy común en caballos que puede producir complicaciones en el pulmón. Se
+                                        transmite de manera aerógena y puede producir estornudos y secreciones nasales.
+                                        Los caballos que han contraído esta enfermedad logran tener inmunidad de manera
+                                        parcial, sin embargo, si el animal ha sido mal alimentado, una gripe puede
+                                        provocar la muerte.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"><a></a> </i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Pérdida del apetito</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Fiebre</a></li>
+                                        <li><a><i class="fa-solid fa-magnet"></i>Secreción nasal</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i><a></a> </i>Tratamiento</h5>
+                                    <p>Pese a que el caballo presenta síntomas leves, se debe realizar los diagnósticos
+                                        y exámenes necesarios para brindar el tratamiento adecuado o recurrir a las
+                                        cirugías veterinarias necesarias.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        //Funcion ara darle color a la cajas
+        $('.enfermedad').mouseenter(function () {
+            $(this).css('background-color', ' aquamarine');
+        });
+
+        $('.enfermedad').mouseleave(function () {
+            $(this).css('background-color', '');
+        });
+
+        //Funcion para hacer el efecto de sombras
+
+
+        $('.enfermedad').mouseenter(function () {
+            $(this).css('box-shadow', '0 0.6rem 0.9rem black');
+        });
+
+        $('.enfermedad').mouseleave(function () {
+            $(this).css('box-shadow', '');
+        });
+
+    </script>
+
+
+    <br><br>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer font-small  pt-4" id="footer">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3" id="contenido">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Pet Guardian </h6>
+                    <p><a href="../../index.html">Home</a></p>
+                    <p><a href="../../Formulario.html">Formulario de Citas</a></p>
+                    <p><a href="../../Galeria.html">Galeria</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociales:</h6>
+
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/ashlydaniela.zamoragamboa" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/ash_zamora99/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="mailto:ashlyd22zamora@gamil.com" target="_blank"><i class="fa fa-google"></i></a>
+                        </li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://web.telegram.org/a/#777000" target="_blank"><i
+                                    class="fa fa-telegram"></i></a></li>
+                        <li><a href="https://ashzamorag.github.io/" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ubicación</h6>
+                    <a> Costa Rica, Alajuela | Sarchí, San Jóse de Trojas </a>
+
+                </div>
+
+            </div>
+            <div>
+                <center style="text-align: center;">Copyright &copy; Derechos Reservados | Ashly Daneniela Zamora Gamboa
+                    | Pet Guardian | UTN III-2023</center>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

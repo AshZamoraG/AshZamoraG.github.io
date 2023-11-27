@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ashly Zamora Gamboa" />
+    <link rel="shortcut icon" href="../../img/LogoProyecto.png">
+    <title> Perros</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Scripts externos-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+    <!--complemento para los iconos-->
+    <script src="https://kit.fontawesome.com/7e471d6c7e.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body class="completeBody">
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html" id="navbar-icon">
+                    <img src="../../img/LogoProyecto.png" alt="Logo" style="width: 100px;">
+                    Pet Guardian
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="navbar">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../Formulario.html">Formulario
+                                    de
+                                    Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../Galeria.html">Galeria Imagenes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../EsquemaVacunas.html">Esquema
+                                    de Vacunas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../../Contacto.html">Contactenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../Acercade.html">Acerda
+                                    de Sitio</a>
+                            </li>
+                        </ul>
+                        <!--
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Mini galeria de Imagenes-->
+        <div class="container-Minigaleria">
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/dog-breeds/labrador-retriever">
+                        <img src="../../Animales/Perros/Labrador Retriever.png" alt="" />
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/labrador-retriever-->
+                        <!--https://www.purina.co.uk/sites/default/files/2022-09/labrador.jpg?h=aa63f6a1&itok=g6_kPChb-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Perros/Labrador Retriever.png" alt="" />
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/labrador-retriever-->
+                        <!--https://www.purina.co.uk/sites/default/files/2022-09/labrador.jpg?h=aa63f6a1&itok=g6_kPChb-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Perro</div>
+                            <div class="raza">Labrador Retriever</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/dog-breeds/chorkie">
+                        <img src="../../Animales/Perros/Chorkie.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-09/Chorkie2_0_1.jpg?h=3cecfb50&itok=YQ7mNgtC-->
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/chorkie-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Perros/Chorkie.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-09/Chorkie2_0_1.jpg?h=3cecfb50&itok=YQ7mNgtC-->
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/chorkie-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Perro</div>
+                            <div class="raza">Chorkie</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/dog-breeds/siberian-husky">
+                        <img src="../../Animales/Perros/Husky siberiano.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-08/Siberian%20Husky2.jpg?h=6d46f7d6&itok=NuR0G5zt-->
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/siberian-husky-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Perros/Husky siberiano.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-08/Siberian%20Husky2.jpg?h=6d46f7d6&itok=NuR0G5zt-->
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/siberian-husky-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Perro</div>
+                            <div class="raza">Husky siberiano</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image">
+                <div class="icon">
+                    <a href="https://nuncajamascocker.blogspot.com/2021/11/conociendo-al-kai-ken.html">
+                        <img src="../../Animales/Perros/Kai Ken.png" alt="" />
+                        <!--https://blogger.googleusercontent.com/img/a/AVvXsEi7IB3bichjgjV7OSSY3WOIipf4A3KnGK5ZWh_pYdf9itiBQYlrEgB6uK61Krik-TSrlmdI21g2PcYbVqv0WmoUqRDuAKUlAa9VznG4n8SRq-JPyppgBMxRA5g4GTBNFiT0Q0KZpYVAXDv4CsGY35zWnf8-BwScU8vNT9PrEzCYMGZHj1y-8hXBO841=s1335-->
+                        <!--https://nuncajamascocker.blogspot.com/2021/11/conociendo-al-kai-ken.html-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Perros/Kai Ken.png" alt="" />
+                        <!--https://blogger.googleusercontent.com/img/a/AVvXsEi7IB3bichjgjV7OSSY3WOIipf4A3KnGK5ZWh_pYdf9itiBQYlrEgB6uK61Krik-TSrlmdI21g2PcYbVqv0WmoUqRDuAKUlAa9VznG4n8SRq-JPyppgBMxRA5g4GTBNFiT0Q0KZpYVAXDv4CsGY35zWnf8-BwScU8vNT9PrEzCYMGZHj1y-8hXBO841=s1335-->
+                        <!--https://nuncajamascocker.blogspot.com/2021/11/conociendo-al-kai-ken.html-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Perro</div>
+                            <div class="raza">Kai Ken</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-image last">
+                <div class="icon">
+                    <a href="https://www.purina.co.uk/find-a-pet/dog-breeds/japanese-shiba-inu">
+                        <img src="../../Animales/Perros/Shiba Inu.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-07/Japanese%20Shiba%20Inu2.jpg?h=ac48c953&itok=zw6kIyAS-->
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/japanese-shiba-inu-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Perros/Shiba Inu.png" alt="" />
+                        <!--https://www.purina.co.uk/sites/default/files/2022-07/Japanese%20Shiba%20Inu2.jpg?h=ac48c953&itok=zw6kIyAS-->
+                        <!--https://www.purina.co.uk/find-a-pet/dog-breeds/japanese-shiba-inu-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Perro</div>
+                            <div class="raza">Shiba Inu</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-image last">
+                <div class="icon">
+                    <a href="https://www.expertoanimal.com/razas-de-perros/calupoh-o-perro-lobo-mexicano.html">
+                        <img src="../../Animales/Perros/Calupoh.png" alt="" />
+                        <!--https://www.expertoanimal.com/razas-de-perros/calupoh-o-perro-lobo-mexicano.html-->
+                        <!--https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=664,height=373.5,fit=cover/article/main-picture/5f71f14d64a0d562899563.jpg-->
+                    </a>
+                </div>
+                <div class="hover-image one">
+                    <div class="img">
+                        <img src="../../Animales/Perros/Calupoh.png" alt="" />
+                        <!--https://www.expertoanimal.com/razas-de-perros/calupoh-o-perro-lobo-mexicano.html-->
+                        <!--https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=664,height=373.5,fit=cover/article/main-picture/5f71f14d64a0d562899563.jpg-->
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <div class="name">Perro</div>
+                            <div class="raza">Calupoh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Cuadros Centrales-->
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <!--Cuadro Info Central -->
+                    <div class="card" style="width: 18rem" id="card1">
+                        <div class="card-body; ">
+                            <img src="../../img/icon/calendario-patita.png" alt="" />
+                            <h5 class="card-title">Promedio de Vida en años</h5>
+                            <p class="card-text">10 – 13 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;" id="card1">
+                        <div class="card-body; ">
+                            <i class="fa-solid fa-dog fa-bounce"></i>
+                            <h5 class="card-title">El mejor amigo del hombre</h5>
+                            <p class="card-text">Fieles compañeros de cuatro patas, son la encarnación del amor
+                                incondicional y la lealtad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem" id="card1">
+                        <div class="card-body; ">
+                            <i class="fa-solid fa-weight-scale"></i>
+                            <h5 class="card-title">Peso Promedio</h5>
+                            <p class="card-text">1.4 – 110 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+
+        <div class="container-Enfermedades">
+            <div id="catalogo">
+                <div class="enfermedad">
+                    <h1>"Rabia"</h1>
+                    <p>"Esta enfermedad afecta a los mamíferos, principalmente a los perros."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Rabia</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>La rabia es una zoonosis vírica, que se
+                                        produce por un virus de tipo RNA
+                                        lineal
+                                        monocatenario.
+                                        <br>
+                                        Esta enfermedad suele darse en mamíferos, incluido el ser humano, y afecta al
+                                        sistema nervioso central,
+                                        provocando
+                                        la muerte si no es tratada con máxima urgencia
+                                        <br>
+                                        La rabia del perro es una enfermedad viral infecciosa que se transmite a través
+                                        de la saliva de un animal
+                                        infectado
+                                        o en contacto con una herida abierta. El riesgo de contagio es muy alto, por
+                                        este motivo se debe consultar
+                                        siempre
+                                        al veterinario en caso de sospecha de rabia.
+                                    </p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"></i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Fiebre</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Pérdida de apetito</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Debilidad muscular</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Irritabilidad</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Temblores </a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Salivación excesiva</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i> </i>Tratamiento</h5>
+                                    <p>El tratamiento de la rabia en perros se basa en la prevención. Lamentablemente la
+                                        rabia no tiene tratamiento ni
+                                        cura. Esta enfermedad se disemina rápidamente por el organismo del perro
+                                        provocando la muerte del animal. Por
+                                        este motivo es de suma importancia la prevención de esta enfermedad mediante la
+                                        vacuna de la rabia en perros.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Distemper"</h1>
+                    <p>"Moquillo canino o distemper, es una enfermedad infectocontagiosa de origen viral de alta
+                        morbilidad"<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop3Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop3Label">Distemper</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i> El moquillo afecta principalmente los
+                                        aparatos respiratorios y digestivos,
+                                        aunque en casos avanzados también afecta el sistema nervioso.
+                                        <br>
+                                        Es una enfermedad de distribución mundial, con incidencia en todas las edades,
+                                        siendo particularmente más
+                                        vulnerables los animales de temprana edad y los adultos mayores.
+                                    </p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"><a></a> </i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Tos</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Secreción Ocular</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Estornudos</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Fiebre </a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Ruidos Respiratorios</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Vertigos</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Cambios de Comportamiento</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Perdida de Reflejos</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i><a></a> </i>Tratamiento</h5>
+                                    <p>Vacunar al mes y 15 dás de nacido.
+                                        <br>
+                                    <h6>Si hay caso de distemper en la zona, vacunar al mes de nacido.</h6>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Parvovirus"</h1>
+                    <p>"Un virus que afecta principalmente a cachorros y gatos. Es altamente mortal"<br>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop2Label">Parvovirus
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>El parvovirus en perros es una enfermedad
+                                        vírica que
+                                        afecta especialmente a cachorros, aunque puede afectar a cualquier tipo de
+                                        perros, aún estando vacunados.
+
+                                        Es una enfermedad altamente contagiosa y letal que afecta a los intestinos y que
+                                        se manifiesta mediante una diarrea
+                                        sanguinolienta.</p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"></i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Sin Apetito</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Depresión</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Deshidratación</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Vomito</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Diarrea</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Vómitos</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Afección Cardiaca</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Miocarditis</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i> </i>Tratamiento</h5>
+                                    <p>Se recomienda suero venosos para detener la deshidratación, terapia de dolor,
+                                        antivioticos para
+                                        infecciones secundarias, un protector gastrico, tambien se recomiendan
+                                        probioticos,
+                                        alimentacion ADE (comida en lata) y un miltivitaminico con hierro.
+
+                                        <br>
+
+
+
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enfermedad">
+                    <h1>"Hepatitis"</h1>
+                    <p>" La hepatitis canina es una enfermedad que afecta únicamente a los perros y no guarda relación
+                        alguna con la
+                        hepatitis humana."<br>
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        Mostrar más
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdrop4Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdrop4Label">Hepatitis</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-Cuerpo">
+                                    <p><i class="fa-solid fa-bacteria"></i>La enfermedad es hoy mucho menos frecuente
+                                        gracias a la eficacia de las vacunas.
+                                        Sin embargo, esta enfermedad extremadamente contagiosa y en ocasiones mortal
+                                        todavía se puede observar en la
+                                        consulta veterinaria, sobre todo en cachorros que no han sido vacunados.
+                                        <br>
+                                        La infección afecta primero al tejido linfático localizado alrededor de la
+                                        cabeza, antes de pasar a otros órganos,
+                                        sobre todo al hígado. Las muertes son frecuentes, aunque se administre un
+                                        tratamiento.
+                                    </p>
+                                    <br>
+                                    <h5><i class="fa-sharp fa-solid fa-circle-radiation"><a></a> </i>Síntomas</h5>
+                                    <ul>
+                                        <li><a><i class="fa-solid fa-paw"></i>Dolor en el abdomen</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Fibre</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Inflamación de las amígdalas</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Intenso enrojecimiento de las mucosas</a>
+                                        </li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Vómitos </a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Diarrea</a></li>
+                                        <li><a><i class="fa-solid fa-paw"></i>Pérdida completa del apetito;</a></li>
+                                    </ul>
+                                    <br>
+                                    <h5><i class="fa-solid fa-syringe"></i><a></a> </i>Tratamiento</h5>
+                                    <p>
+                                        Tratamiento antibiótico para controlar las infecciones bacterianas secundarias.
+                                        <br>
+                                        Medicación para controlar los síntomas, como diarrea, vómitos, insuficiencia
+                                        hepática o los problemas de coagulación de la sangre.
+                                        <br>
+                                        Intentar que el perro coma una dieta especial para la insuficiencia hepática.
+                                        <br>
+                                        Guardar reposo absoluto, nada de ejercicio. Muchos animales pueden sufrir una
+                                        recaída grave cuando, aparentemente recuperados, dan su primer paseo.
+                                        <br>
+                                        Antiinflamatorios.
+                                        <br>
+                                        Es necesario tener en cuenta que el hígado eliminará con lentitud algunos
+                                        medicamentos y quizás sea preciso reducir las dosis o ampliar el intervalo de
+                                        administración de los mismos, circunstancia que el veterinario tendrá en cuenta.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark"
+                                        data-bs-dismiss="modal">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        //Funcion ara darle color a la cajas
+        $('.enfermedad').mouseenter(function () {
+            $(this).css('background-color', ' aquamarine');
+        });
+
+        $('.enfermedad').mouseleave(function () {
+            $(this).css('background-color', '');
+        });
+
+        //Funcion para hacer el efecto de sombras
+
+
+        $('.enfermedad').mouseenter(function () {
+            $(this).css('box-shadow', '0 0.6rem 0.9rem black');
+        });
+
+        $('.enfermedad').mouseleave(function () {
+            $(this).css('box-shadow', '');
+        });
+
+    </script>
+
+
+    <br><br>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer font-small  pt-4" id="footer">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3" id="contenido">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Pet Guardian </h6>
+                    <p><a href="../../index.html">Home</a></p>
+                    <p><a href="../../Formulario.html">Formulario de Citas</a></p>
+                    <p><a href="../../Galeria.html">Galeria</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociales:</h6>
+
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/ashlydaniela.zamoragamboa" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/ash_zamora99/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="mailto:ashlyd22zamora@gamil.com" target="_blank"><i class="fa fa-google"></i></a>
+                        </li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://web.telegram.org/a/#777000" target="_blank"><i
+                                    class="fa fa-telegram"></i></a></li>
+                        <li><a href="https://ashzamorag.github.io/" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ubicación</h6>
+                    <a> Costa Rica, Alajuela | Sarchí, San Jóse de Trojas </a>
+
+                </div>
+
+            </div>
+            <div>
+                <center style="text-align: center;">Copyright &copy; Derechos Reservados | Ashly Daneniela Zamora Gamboa
+                    | Pet Guardian | UTN III-2023</center>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
